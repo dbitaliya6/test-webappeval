@@ -103,7 +103,7 @@
                 >
                   CANCEL
                 </button>
-                <button class="btn btn-primary" (click)="saveClockSettings()">
+                <button class="btn btn-primary" (click)="saveAllSettings()">
                   SAVE
                 </button>
               </div>
@@ -116,6 +116,7 @@
             id="clock_bg_setting"
           >
             <app-widget-bg-setting
+              #widgetBgSettingComponent
               [widgetbgsetting]="widgetBgSetting"
               [widgetType]="widgetType"
               (emitbgsettingOptions)="onbgsettingOptions($event)"
